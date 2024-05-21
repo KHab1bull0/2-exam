@@ -1,0 +1,20 @@
+{
+  "name": "2---exam",
+  "version": "1.0.0",
+  "description": "## Oylik Imtihon Talablari: Trello-ga O'xshash REST Xizmat Yaratish",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "pg": "^8.11.5"
+  }
+}
