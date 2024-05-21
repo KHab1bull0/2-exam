@@ -46,3 +46,12 @@ export const getById = async (id) => {
   const res = await pool.query(query, [id]);
   return res.rows;
 };
+
+export const deleteById = async (id) => {
+  const query = `
+    DELETE FROM tasks WHERE id = $1 RETURNING *;
+  `;
+
+  const res = await pool.query(query, [id]);
+  return res.rows;
+};
